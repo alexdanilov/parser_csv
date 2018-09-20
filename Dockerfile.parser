@@ -1,0 +1,6 @@
+FROM golang:latest
+RUN mkdir $GOPATH/src/parser_service
+ADD . $GOPATH/src/parser_service
+WORKDIR $GOPATH/src/parser_service/parser
+RUN go build -o parser .
+CMD ["$GOPATH/src/parser_service/parser"]

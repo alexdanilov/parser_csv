@@ -1,0 +1,3 @@
+parser/*.csv
+.idea
+.DS_Store

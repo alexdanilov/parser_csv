@@ -1,0 +1,12 @@
+version: '2'
+services:
+  service:
+    build:
+      context: ./
+      dockerfile: Dockerfile.service
+    ports:
+    - "5000:5000"
+  parser:
+    build:
+      context: ./
+      dockerfile: Dockerfile.parser
